@@ -1,88 +1,324 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ameer Bkri</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ameer Bkri — Founder of NonPage</title>
 
-  <style>
-    body{
-      font-family: Arial, sans-serif;
-      margin:0;
-      background:#f8fafc;
-      color:#111827;
-      text-align:center;
-    }
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:"Tahoma",Arial,sans-serif;
+  background:#fff;
+  color:#0f172a;
+}
+header{
+  height:86px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:16px;
+  border-bottom:1px solid #e5e7eb;
+  position:sticky;
+  top:0;
+  background:rgba(255,255,255,.92);
+  backdrop-filter:blur(12px);
+  z-index:10;
+}
+.lang{
+  position:absolute;
+  left:30px;
+  border:1px solid #dbe1ea;
+  padding:14px 18px;
+  border-radius:10px;
+  color:#2563eb;
+}
+.brand{
+  font-family:monospace;
+  font-size:25px;
+  font-weight:800;
+  letter-spacing:2px;
+}
+.brand span{color:#2563eb}
 
-    .container{
-      max-width:900px;
-      margin:auto;
-      padding:60px 20px;
-    }
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:80px 28px;
+}
+.hero{text-align:center}
+.kicker{
+  color:#2563eb;
+  font-weight:800;
+  margin-bottom:25px;
+}
+h1{
+  font-size:58px;
+  line-height:1.25;
+  margin:0;
+}
+h1 span{color:#2563eb}
+.name{
+  font-size:28px;
+  color:#64748b;
+  margin-top:25px;
+  font-weight:700;
+}
+.lead{
+  font-size:28px;
+  line-height:2;
+  color:#475569;
+  margin:35px auto;
+  max-width:780px;
+}
+.actions{
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  flex-wrap:wrap;
+  margin-top:35px;
+}
+.btn{
+  text-decoration:none;
+  padding:17px 28px;
+  border-radius:12px;
+  font-size:20px;
+  font-weight:800;
+  border:1px solid #dbe1ea;
+  color:#111827;
+}
+.primary{
+  background:#2563eb;
+  color:white;
+  border-color:#2563eb;
+}
+.stats{
+  margin-top:60px;
+  display:grid;
+  gap:20px;
+  justify-content:center;
+  font-size:24px;
+  color:#64748b;
+}
+.stats b{color:#111827}
+.diamond{color:#2563eb;margin:0 10px}
 
-    h1{
-      font-size:48px;
-      margin-bottom:10px;
-    }
+section{
+  border-top:1px solid #e5e7eb;
+  padding:85px 0;
+}
+.section-title{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  gap:18px;
+  margin-bottom:45px;
+}
+.number{
+  color:#2563eb;
+  font-family:monospace;
+  font-size:22px;
+}
+h2{
+  font-size:44px;
+  margin:0;
+}
+.text{
+  font-size:27px;
+  line-height:2.1;
+  color:#475569;
+}
+.text b{color:#111827}
+.project{
+  border:1px solid #edf0f5;
+  border-radius:28px;
+  padding:40px;
+  margin:28px 0;
+  background:#fff;
+}
+.meta{
+  color:#64748b;
+  font-size:20px;
+  margin-bottom:18px;
+}
+.meta span{color:#2563eb;font-weight:800}
+.project h3{
+  font-size:38px;
+  margin:10px 0;
+}
+.tags{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:25px;
+}
+.tag{
+  border:1px solid #dbe1ea;
+  background:#f8fafc;
+  padding:10px 16px;
+  border-radius:10px;
+  font-family:monospace;
+  font-size:18px;
+}
+.link{
+  display:inline-block;
+  margin-top:28px;
+  color:#2563eb;
+  font-size:23px;
+  font-weight:800;
+  text-decoration:none;
+}
+footer{
+  border-top:1px solid #e5e7eb;
+  padding:45px;
+  text-align:center;
+  color:#64748b;
+  font-size:18px;
+}
 
-    .blue{
-      color:#2563eb;
-    }
-
-    p{
-      font-size:20px;
-      line-height:1.8;
-      color:#4b5563;
-    }
-
-    .btn{
-      display:inline-block;
-      padding:15px 25px;
-      margin:10px;
-      background:#2563eb;
-      color:white;
-      text-decoration:none;
-      border-radius:12px;
-      font-size:18px;
-    }
-
-    .card{
-      background:white;
-      padding:25px;
-      border-radius:20px;
-      margin-top:40px;
-      box-shadow:0 5px 20px rgba(0,0,0,.08);
-    }
-  </style>
+@media(max-width:700px){
+  header{justify-content:flex-end;padding-right:24px}
+  .brand{font-size:18px}
+  .lang{left:18px;padding:10px 14px}
+  .container{padding:60px 25px}
+  h1{font-size:39px}
+  .lead,.text{font-size:22px}
+  h2{font-size:36px}
+  .project h3{font-size:32px}
+}
+</style>
 </head>
+
 <body>
 
-<div class="container">
+<header>
+  <div class="lang">EN</div>
+  <div class="brand">AMEER BKRI <span>// Founder · E-Commerce · AI</span></div>
+</header>
 
-  <h1>Ameer <span class="blue">Bkri</span></h1>
+<main class="container">
 
-  <p>
-    مؤسس منصة NonPage ومنصة KSBK للتجارة الإلكترونية والذكاء الاصطناعي.
-  </p>
+  <section class="hero">
+    <div class="kicker">مؤسس منصات تجارة إلكترونية · بغداد، العراق</div>
 
-  <a class="btn" href="https://nonpage.com">
-    زيارة NonPage
-  </a>
+    <h1>
+      أبني منصات تساعد التجار على البيع أسرع عبر
+      <span>NonPage</span> و <span>KSBK</span>.
+    </h1>
 
-  <a class="btn" href="https://ksbk.net">
-    زيارة KSBK
-  </a>
+    <div class="name">Ameer Bkri</div>
 
-  <div class="card">
-    <h2>إنجازاتي</h2>
+    <p class="lead">
+      أعمل على بناء منتجات رقمية للتجارة الإلكترونية، صفحات الهبوط، إدارة الطلبات،
+      ربط شركات التوصيل، وأدوات الذكاء الاصطناعي التي تساعد أصحاب المتاجر على النمو بدون تعقيد.
+    </p>
 
-    <p>🚀 مؤسس منصة NonPage</p>
-    <p>🛒 تطوير منصات التجارة الإلكترونية</p>
-    <p>🤖 تطبيقات الذكاء الاصطناعي</p>
-    <p>📱 تطبيقات Android و iOS</p>
-  </div>
+    <div class="actions">
+      <a class="btn primary" href="#projects">أبرز الأعمال</a>
+      <a class="btn" href="https://nonpage.com">زيارة NonPage</a>
+      <a class="btn" href="https://ksbk.net">زيارة KSBK</a>
+    </div>
 
-</div>
+    <div class="stats">
+      <div><span class="diamond">◆</span><b>Founder</b><span class="diamond">◆</span> NonPage</div>
+      <div><span class="diamond">◆</span><b>Founder</b><span class="diamond">◆</span> KSBK</div>
+      <div><span class="diamond">◆</span><b>AI + E-Commerce</b><span class="diamond">◆</span> Product Builder</div>
+      <div><span class="diamond">◆</span> ksbk.shop@gmail.com ✉️</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">
+      <span class="number">01</span>
+      <h2>نبذة</h2>
+    </div>
+
+    <p class="text">
+      أنا <b>Ameer Bkri</b>، مؤسس <b>NonPage</b> و <b>KSBK</b>.
+      أركز على بناء حلول عملية للتجار في العراق والمنطقة، من إنشاء متجر إلكتروني خلال دقائق،
+      إلى صفحات هبوط عالية التحويل، وإدارة طلبات ومنتجات وربط خدمات التوصيل.
+    </p>
+
+    <p class="text">
+      هدفي هو تحويل البيع على السوشيال ميديا من محادثات متعبة وطلبات ضائعة
+      إلى نظام واضح: رابط منتج، صفحة طلب، بيانات زبون، وإدارة كاملة من مكان واحد.
+    </p>
+  </section>
+
+  <section id="projects">
+    <div class="section-title">
+      <span class="number">02</span>
+      <h2>أبرز الأعمال</h2>
+    </div>
+
+    <div class="project">
+      <div class="meta"><span>منصة · تجارة إلكترونية</span> · يعمل</div>
+      <h3>NonPage</h3>
+      <p class="text">
+        منصة لإنشاء متاجر إلكترونية وصفحات هبوط للتجار بدون برمجة.
+        تتيح إضافة المنتجات، استقبال الطلبات، تخصيص الثيمات، دعم اللغات،
+        وربط أدوات تسويقية تساعد التاجر على البيع بشكل أسرع.
+      </p>
+      <div class="tags">
+        <div class="tag">Landing Pages</div>
+        <div class="tag">Store Builder</div>
+        <div class="tag">Orders</div>
+        <div class="tag">Arabic / Kurdish / English</div>
+      </div>
+      <a class="link" href="https://nonpage.com">↗ عرض المشروع</a>
+    </div>
+
+    <div class="project">
+      <div class="meta"><span>تطبيق · تجارة إلكترونية</span> · يعمل</div>
+      <h3>KSBK</h3>
+      <p class="text">
+        منصة تساعد المستخدمين على بيع المنتجات وإدارة الطلبات والأرباح،
+        مع تجربة مخصصة للسوق العراقي وربط مباشر بين المنتجات والطلبات والمستخدمين.
+      </p>
+      <div class="tags">
+        <div class="tag">E-Commerce</div>
+        <div class="tag">Orders</div>
+        <div class="tag">Suppliers</div>
+        <div class="tag">Iraq Market</div>
+      </div>
+      <a class="link" href="https://ksbk.net">↗ عرض المشروع</a>
+    </div>
+
+    <div class="project">
+      <div class="meta"><span>AI · Automation</span> · تطوير مستمر</div>
+      <h3>AI Commerce Tools</h3>
+      <p class="text">
+        تطوير أفكار وأدوات تعتمد على الذكاء الاصطناعي لتحسين صفحات المنتجات،
+        تحليل الطلبات، أتمتة الإشعارات، ومساعدة التجار على اتخاذ قرارات أسرع.
+      </p>
+      <div class="tags">
+        <div class="tag">AI</div>
+        <div class="tag">Automation</div>
+        <div class="tag">Telegram Bots</div>
+        <div class="tag">Dashboards</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">
+      <span class="number">03</span>
+      <h2>الرؤية</h2>
+    </div>
+
+    <p class="text">
+      أؤمن أن التاجر لا يحتاج إلى تعقيد تقني حتى يبيع أونلاين.
+      يحتاج إلى أدوات واضحة، رابط سريع، صفحة مقنعة، طلبات منظمة، ونظام يساعده يكبر.
+      هذا هو الاتجاه الذي أبني عليه NonPage و KSBK.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Ameer Bkri — Built with GitHub Pages
+</footer>
 
 </body>
 </html>
